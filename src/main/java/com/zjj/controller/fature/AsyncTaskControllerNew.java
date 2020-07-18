@@ -1,4 +1,4 @@
-package com.zjj.fature;
+package com.zjj.controller.fature;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -7,6 +7,11 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.concurrent.Future;
 
+/**
+ * @author zhijiaju
+ * @version 1.0
+ * @date 2020/6/23 13:42
+ */
 @RequestMapping("/asy")
 @RestController
 public class AsyncTaskControllerNew {

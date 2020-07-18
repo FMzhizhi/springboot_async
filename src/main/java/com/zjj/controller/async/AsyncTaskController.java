@@ -1,10 +1,15 @@
-package com.zjj.controller;
+package com.zjj.controller.async;
 
-import com.zjj.task.AsyncTask;
+import com.zjj.service.task.AsyncTask;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+/**
+ * @author zhijiaju
+ * @version 1.0
+ * @date 2020/6/23 13:42
+ */
 @RequestMapping("/async")
 @RestController
 public class AsyncTaskController {  

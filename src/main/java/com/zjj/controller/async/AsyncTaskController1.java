@@ -1,4 +1,4 @@
-package com.zjj.controller;
+package com.zjj.controller.async;
 
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/async1")
 public class AsyncTaskController1 {
 
+    //@Async的方法不能在同一个类，否者无效 相当于同步
     //spring对@Transactional注解时也有类似问题，spring扫描时具有@Transactional注解方法的类时，
     // 是生成一个代理类，由代理类去开启关闭事务，而在同一个类中，方法调用是在类体内执行的，
     // spring无法截获这个方法调用。
